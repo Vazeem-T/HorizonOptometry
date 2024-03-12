@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <partial name="_title" />
+</head>
+<body data-rsssl=1
+     class="home page-template page-template-page_HOME page-template-page_HOME-php page page-id-4321 unknown">
+    <div id="preloader">
+        <div class="layerWrap"><i class='layer'></i><i class='layer'></i><i class='layer'></i></div>
+    </div>
+   @*  <script src="~/Asset/js/otSDKStub.js" type="text/javascript" charset="UTF-8"
+            data-domain-script="597ed76b-ded7-4f95-ba6e-4121d2646e93"></script> *@
+    <script type="text/javascript">
+        function OptanonWrapper() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'OneTrustGroupsUpdated'
+            });
+        }
+    </script>
+    <partial name="_Header"/>
+
+            @RenderBody()
+
+    <partial name="_footer" />
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

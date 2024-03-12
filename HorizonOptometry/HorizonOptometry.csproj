@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Asset\js\app\scripts\modules\jquery.lazy.js" />
+    <None Include="wwwroot\Asset\js\app\scripts\modules\jquery.lazy.min.js" />
+    <None Include="wwwroot\Asset\js\app\scripts\modules\jquery.lazy.plugins.js" />
+    <None Include="wwwroot\Asset\js\app\scripts\modules\jquery.lazy.plugins.min.js" />
+  </ItemGroup>
+
+</Project>
